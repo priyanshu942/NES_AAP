@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LogIn"
+    android:background="#EADA52">
+
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="150dp"
+    android:layout_above="@id/uniqueNo"
+    android:src="@drawable/nes"/>
+<EditText
+    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:drawableStart="@drawable/baseline_email_24"
+    android:background="@drawable/login"
+    android:hint="Unique Id"
+    android:drawablePadding="10dp"
+    android:layout_margin="25dp"
+    android:layout_centerInParent="true"
+    android:id="@+id/uniqueNo"
+    android:textColorHint="@color/purple_700"
+    android:textColor="@color/purple_700"
+    android:inputType="textEmailAddress"
+    android:shadowColor="@color/purple_700"
+
+    />
+    <EditText
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:drawablePadding="10dp"
+        android:background="@drawable/login"
+        android:inputType="textPassword"
+        android:drawableStart="@drawable/baseline_lock_24"
+        android:hint="Password"
+        android:layout_margin="25dp"
+        android:layout_below="@id/uniqueNo"
+        android:textColor="@color/purple_700"
+        android:textColorHint="@color/purple_700"
+        android:outlineAmbientShadowColor="@color/purple_700"
+        android:id="@+id/password"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password"
+        android:layout_centerHorizontal="true"
+        android:text="login"
+        android:id="@+id/logIn"
+        android:padding="15dp"
+        android:paddingHorizontal="5dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/darkt"/>
+</RelativeLayout>
